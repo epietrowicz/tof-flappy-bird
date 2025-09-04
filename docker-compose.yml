@@ -1,0 +1,11 @@
+services:
+  app:
+    build: .
+    container_name: tof
+    devices:
+      - /dev/i2c-2:/dev/i2c-2
+    volumes:
+      - .:/app
+    privileged: true
+    # group_add:
+    #   - "i2c"
