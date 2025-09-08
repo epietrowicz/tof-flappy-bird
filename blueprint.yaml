@@ -1,0 +1,30 @@
+slug: tof-flappy-bird
+type: Tutorial
+category: "Getting started"
+expertiseLevel: "Beginner"
+tags: ["Application"]
+icon: assets/hello-world.svg
+gitrepo: https://github.com/epietrowicz/tof-flappy-bird
+name: "Time of Flight Flappy Bird"
+shortDescription: Flappy Bird ported to Tachyon with a time of flight sensors as the user input.
+version: 1.0.0
+models: []
+language: [ "Python" ]
+cloudServices:
+integrations: []
+supportedDevices:
+  - name: Tachyon
+  - name: Rasberry Pi
+webIdeLink: https://go.particle.io/shared_apps/6761f677ca3d870509cd4384
+webSetupLink: part.cl/setup-tachyon
+hardwareDependencies:
+  - name: Supported device
+containers: flappy-bird
+introduction: |
+  Welcome to the **Time of Flight Flappy Bird** for Particle! 
+
+description: |
+  The Time of Flight Flappy Bird is a fun game that uses time of flight sensors to control the bird's movement.
+
+additionalResources:
+  - [Tachyon Edge AI Overview](https://particle.io/tachyon)
