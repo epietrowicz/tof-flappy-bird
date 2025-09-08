@@ -7,6 +7,8 @@ ENV PYTHONDONTWRITEBYTECODE=1
 # Turns off buffering for easier container logging
 ENV PYTHONUNBUFFERED=1
 
+ENV DISPLAY=:0
+
 # RUN pip install --upgrade pip setuptools wheel build packaging setuptools-scm
 
 COPY requirements.txt .

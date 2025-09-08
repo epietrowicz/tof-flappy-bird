@@ -1,11 +1,13 @@
 services:
   app:
     build: .
-    container_name: tof
     devices:
       - /dev/i2c-2:/dev/i2c-2
     volumes:
       - .:/app
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
     privileged: true
-    # group_add:
-    #   - "i2c"
+    environment:
+      - DISPLAY=${DISPLAY}
+      - SDL_VIDEODRIVER=x11
+      - PYTHONUNBUFFERED=1
