@@ -9,12 +9,10 @@ ENV PYTHONUNBUFFERED=1
 
 ENV DISPLAY=:0
 
-# RUN pip install --upgrade pip setuptools wheel build packaging setuptools-scm
-
 COPY requirements.txt .
 RUN python -m pip install -r requirements.txt
 
 WORKDIR /app
 COPY . /app
 
-CMD ["sleep", "infinity"]
+CMD ["python3", "main.py"]
