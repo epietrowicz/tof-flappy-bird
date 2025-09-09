@@ -1,5 +1,5 @@
 {
-    "dockerComposeFile": "../docker-compose.yml",
+    "dockerComposeFile": "../flappy-bird/docker-compose.yml",
     "service": "app",
     "workspaceFolder": "/app",
     "remoteUser": "root",

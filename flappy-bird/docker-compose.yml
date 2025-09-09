@@ -8,6 +8,6 @@ services:
       - /tmp/.X11-unix:/tmp/.X11-unix:rw
     privileged: true
     environment:
-      - DISPLAY=${DISPLAY}
+      - DISPLAY=:0
       - SDL_VIDEODRIVER=x11
       - PYTHONUNBUFFERED=1

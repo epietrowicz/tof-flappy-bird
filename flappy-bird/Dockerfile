@@ -7,12 +7,10 @@ ENV PYTHONDONTWRITEBYTECODE=1
 # Turns off buffering for easier container logging
 ENV PYTHONUNBUFFERED=1
 
-ENV DISPLAY=:0
-
 COPY requirements.txt .
 RUN python -m pip install -r requirements.txt
 
 WORKDIR /app
 COPY . /app
 
-CMD ["python3", "main.py"]
+CMD ["python3", "flappy-bird/main.py"]
